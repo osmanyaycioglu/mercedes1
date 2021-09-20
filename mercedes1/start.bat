@@ -1,0 +1,1 @@
+java -jar ./target/mercedes1-1.0.0.jar
