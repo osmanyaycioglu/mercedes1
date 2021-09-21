@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class Customer {
 
+    private String    username;
     private String    name;
     private String    surname;
     private String    desc;
@@ -57,6 +58,14 @@ public class Customer {
 
     public void setBirthdate(final LocalDate birthdateParam) {
         this.birthdate = birthdateParam;
+    }
+
+    public String getUsername() {
+        return this.username;
+    }
+
+    public void setUsername(final String usernameParam) {
+        this.username = usernameParam;
     }
 
 

@@ -1,3 +1,6 @@
 com\training\spring\MyFirstRest.class
+com\training\spring\rest\CustomerQueryController.class
+com\training\spring\rest\CustomerController.class
 com\training\spring\Customer.class
 com\training\spring\Mercedes1Application.class
+com\training\spring\rest\CustomerService.class
