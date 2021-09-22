@@ -1,16 +1,20 @@
 package com.training.spring;
 
-import java.time.LocalDate;
+import java.util.Date;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
 public class Customer {
 
-    private String    username;
-    private String    name;
-    private String    surname;
-    private String    desc;
-    private int       height;
-    private int       weight;
-    private LocalDate birthdate;
+    private String username;
+    private String name;
+    private String surname;
+    private String desc;
+    private int    height;
+    private int    weight;
+    private Date   birthdate;
 
     public String getName() {
         return this.name;
@@ -52,13 +56,6 @@ public class Customer {
         this.weight = weightParam;
     }
 
-    public LocalDate getBirthdate() {
-        return this.birthdate;
-    }
-
-    public void setBirthdate(final LocalDate birthdateParam) {
-        this.birthdate = birthdateParam;
-    }
 
     public String getUsername() {
         return this.username;
@@ -66,6 +63,14 @@ public class Customer {
 
     public void setUsername(final String usernameParam) {
         this.username = usernameParam;
+    }
+
+    public Date getBirthdate() {
+        return this.birthdate;
+    }
+
+    public void setBirthdate(final Date birthdateParam) {
+        this.birthdate = birthdateParam;
     }
 
 
